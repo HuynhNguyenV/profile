@@ -1,821 +1,328 @@
-<!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<!doctype html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
 <head>
-
-   <!--- Basic Page Needs
-   ================================================== -->
-   <meta charset="utf-8">
-	<title>Ceevee Web Design</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
-
-   <!-- Mobile Specific Metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-	<!-- CSS
-    ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
-
-   <!-- Script
-   ================================================== -->
-	<script src="js/modernizr.js"></script>
-
-   <!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="favicon.png" >
-
+    <meta charset="UTF-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nguyễn Anh Tấn- Full Stack Developer Resume</title>
+    <!-- Default style sheets -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700|Raleway:100,300" rel="stylesheet">
+    <link rel="stylesheet" href="dist/dist.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
 </head>
 
-<body>
-
-   <!-- Header
-   ================================================== -->
-   <header id="home">
-
-      <nav id="nav-wrap">
-
-         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-	      <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-
-         <ul id="nav" class="nav">
-            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-	         <li><a class="smoothscroll" href="#resume">Resume</a></li>
-            <li><a class="smoothscroll" href="#portfolio">Works</a></li>
-            <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li>
-            <li><a class="smoothscroll" href="#contact">Contact</a></li>
-         </ul> <!-- end #nav -->
-
-      </nav> <!-- end #nav-wrap -->
-
-      <div class="row banner">
-         <div class="banner-text">
-            <h1 class="responsive-headline">I'm Giri Designs.</h1>
-            <h3>I'm a  <span>graphic designer</span>, <span>illustrator</span> and <span>webdesigner</span> creating awesome and
-            effective visual identities for companies of all sizes around the globe. Let's <a class="smoothscroll" href="#about">start scrolling</a>
-            and learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
-            <hr />
-            <ul class="social">
-               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-               <li><a href="#"><i class="fa fa-skype"></i></a></li>
+<body class="homepage ver-one" data-spy="scroll" data-target=".main-navigation">
+    <header id="site-header">
+        <nav id="site-navigation" class="main-navigation side-static" role="navigation">
+            <div class="navigation-header">
+                <a href="index.html" class="logo"><img src="images/site-logo.png" alt="Signature" class="site-logo"></a>
+                <button class="menu-switch">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <!-- /.navigation-header -->
+            <ul class="nav navigation">
+                <li class="item"><a href="#site-header" class="fa-home">Home</a></li>
+                <li class="item"><a href="#about" class="fa-user">About</a></li>
+                <li class="item"><a href="#skills" class="fa-signal">Skills</a></li>
+                <li class="item"><a href="#experiences" class="fa-bar-chart-o">Experiences</a></li>
+                <li class="item"><a href="#education" class="fa-book">Education</a></li>
             </ul>
-         </div>
-      </div>
-
-      <p class="scrolldown">
-         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
-      </p>
-
-   </header> <!-- Header End -->
-
-
-   <!-- About Section
-   ================================================== -->
-   <section id="about">
-
-      <div class="row">
-
-         <div class="three columns">
-
-            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
-
-         </div>
-
-         <div class="nine columns main-col">
-
-            <h2>About Me</h2>
-
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.
-            </p>
-
-            <div class="row">
-
-               <div class="columns contact-details">
-
-                  <h2>Contact Details</h2>
-                  <p class="address">
-						   <span>Giri Designs</span><br>
-						   <span>50, Thiruvoodal Street,<br>
-						         Thiruvannamalai - 606 601, TN.
-                     </span><br>
-						   <span>+91 94884 87853</span><br>
-                     <span>giridesigns5@gmail.com</span>
-					   </p>
-
-               </div>
-
-               <div class="columns download">
-                  <p>
-                     <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
-                  </p>
-               </div>
-
-            </div> <!-- end row -->
-
-         </div> <!-- end .main-col -->
-
-      </div>
-
-   </section> <!-- About Section End-->
-
-
-   <!-- Resume Section
-   ================================================== -->
-   <section id="resume">
-
-      <!-- Education
-      ----------------------------------------------- -->
-      <div class="row education">
-
-         <div class="three columns header-col">
-            <h1><span>Education</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>University of Life</h3>
-                  <p class="info">Master in Graphic Design <span>&bull;</span> <em class="date">April 2007</em></p>
-
-                  <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>School of Cool Designers</h3>
-                  <p class="info">B.A. Degree in Graphic Design <span>&bull;</span> <em class="date">March 2003</em></p>
-
-                  <p>
-                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-                  ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Education -->
-
-
-      <!-- Work
-      ----------------------------------------------- -->
-      <div class="row work">
-
-         <div class="three columns header-col">
-            <h1><span>Work</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Awesome Design Studio</h3>
-                  <p class="info">Senior UX Designer <span>&bull;</span> <em class="date">March 2010 - Present</em></p>
-
-                  <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
-                  ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-                  Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. Nullam dictum felis eu pede mollis pretium.
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Super Cool Studio</h3>
-                  <p class="info">UX Designer <span>&bull;</span> <em class="date">March 2007 - February 2010</em></p>
-
-                  <p>
-                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                  Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                  nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan
-                  ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Work -->
-
-
-      <!-- Skills
-      ----------------------------------------------- -->
-      <div class="row skill">
-
-         <div class="three columns header-col">
-            <h1><span>Skills</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-            voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
-            voluptatem sequi nesciunt.
-            </p>
-
-				<div class="bars">
-
-				   <ul class="skills">
-					   <li><span class="bar-expand photoshop"></span><em>Photoshop</em></li>
-                  <li><span class="bar-expand illustrator"></span><em>Illustrator</em></li>
-						<li><span class="bar-expand wordpress"></span><em>Wordpress</em></li>
-						<li><span class="bar-expand css"></span><em>CSS</em></li>
-						<li><span class="bar-expand html5"></span><em>HTML5</em></li>
-                  <li><span class="bar-expand jquery"></span><em>jQuery</em></li>
-					</ul>
-
-				</div><!-- end skill-bars -->
-
-			</div> <!-- main-col end -->
-
-      </div> <!-- End skills -->
-
-   </section> <!-- Resume Section End-->
-
-
-   <!-- Portfolio Section
-   ================================================== -->
-   <section id="portfolio">
-
-      <div class="row">
-
-         <div class="twelve columns collapsed">
-
-            <h1>Check Out Some of My Works.</h1>
-
-            <!-- portfolio-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-
-          	   <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-01" title="">
-                        <img alt="" src="images/portfolio/coffee.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Coffee</h5>
-                              <p>Illustrration</p>
-          					   </div>
+            <!-- /.navigation -->
+        </nav>
+        <!-- /#site-navigation -->
+        <div id="banner" class="transparent-section" data-image="images/header-bg.jpg" data-color="26, 188, 156" data-transparency="0.80">
+            <div class="transparent-content parallax-style">
+                <div class="header-content">
+                    <div class="container">
+                        <div class="site-title">
+                            <h1 class="site-name">I’m Tan Nguyen</h1>
                         </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-02" title="">
-                        <img alt="" src="images/portfolio/console.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Console</h5>
-                              <p>Web Development</p>
-          					   </div>
+                        <!-- /.site-title -->
+                        <h3 class="site-slogan">A Full Stack Developer</h3>
+                        <!-- /.site-slogan-->
+                        <div class="social-link">
+                            <ul class="social-profiles">
+                                <li class="item"><a href="https://www.linkedin.com/in/t%E1%BA%A5n-nguy%E1%BB%85n-975b10140/" class="fa-linkedin"><span>LinkedIn</span></a></li>
+                                <li class="item"><a href="https://stackoverflow.com/users/9532489/t%E1%BA%A5n-nguy%E1%BB%85n" class="fa-stack-overflow"><span>Stack Overflow</span></a></li>
+                                <li class="item"><a href="" class="fa-wordpress"><span>Blog</span></a></li>
+                                <li class="item"><a href="https://github.com/tannguyen208" class="fa-github"><span>Github</span></a></li>
+                                <li class="item"><a href="https://www.facebook.com/pin208" class="fa-facebook"><span>Facebook</span></a></li>
+                            </ul>
                         </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-03" title="">
-                        <img alt="" src="images/portfolio/judah.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Judah</h5>
-                              <p>Webdesign</p>
-          					   </div>
+                        <!-- /.social-link -->
+                    </div>
+                </div>
+                <!-- /.header-content -->
+            </div>
+            <!-- /.transparent-content -->
+        </div>
+        <!-- /.transparent-section -->
+    </header>
+    <!-- /#site-header -->
+    <section id="about" class="default-section" data-scroll-reveal="enter from the bottom over .5s">
+        <div class="section-heading">
+            <h2 class="section-title">About me</h2>
+        </div>
+        <!-- /.section-heading -->
+        <div class="about-container">
+            <div class="container">
+                <div class="col-md-3" data-scroll-reveal="enter from the left after .5s">
+                    <div class="profile-photo section-box">
+                        <img src="images/profile-img.jpg" alt="Huy Hoang" class="profile-image img-responsive">
+                    </div>
+                    <!-- /.profile-photo -->
+                </div>
+                <div class="col-md-6" data-scroll-reveal="enter from the right after .5s">
+                    <div class="profile-details section-box">
+                        <h2 class="title">Summary</h2>
+                        <div class="about-content">
+                            <p>
+                                I'm Nguyen Anh Tan, a full stack developer with <b>3 years of experience in .NET technologies</b> and <b>1 year of experience in MEAN stack</b>, with good knowledge of <i>Database Design, Design Pattern, Object-Oriented Analysis and Design</i>.</p>
+                            <p>Learning new languages and technologies is what I am passionate about (I self-taught Django with 3 weeks). I am considered a team-player because I like to help other and tend to work well within groups. I can also do some mentoring tasks and do code reviewing for other team members.</p>
+                            <p> I like helping other and work well with group. I can also do some mentoring tasks and code reviewing for other members .</p>
+                            <p>I am also the owner of an IT blog called: <a href="https://foopin.site/">foopin.site</a>.</p>
                         </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-04" title="">
-                        <img alt="" src="images/portfolio/into-the-light.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Into The Light</h5>
-                              <p>Photography</p>
-          					   </div>
+                        <!-- /.about-content -->
+                        <a href="assets/TanNguyen.pdf" class="btn fa-download download-btn">My CV</a>
+                    </div>
+                    <!-- /.profile-details -->
+                </div>
+                <div class="col-md-3" data-scroll-reveal="enter from the right after .5s">
+                    <div class="profile-details section-box">
+                        <h2 class="title">Contact Info</h2>
+                        <address>
+                            <ul class="address-line">
+                                <li class="fa-map-marker">Str.132 Duy Tan, Da Nang City, Viet Nam</li>
+                                <li class="fa-phone">+84 163 404 8028</li>
+                                <li class="fa-envelope"><a href="mailto:tantote33112@gmail.com">tantote33112@gmail.com</a></li>
+                                <li class="fa-globe"> <a href="foopin.site">FOopiN.site</a></li>
+                            </ul>
+                        </address>
+                        <!-- /.contact-info -->
+                    </div>
+                    <!-- /.profile-details -->
+                </div>
+            </div>
+        </div>
+        <!-- /.about-container -->
+    </section>
+    <!-- /#about -->
+    <section id="skills" class="default-section" data-scroll-reveal="enter from the bottom over .5s">
+        <div class="section-heading">
+            <h2 class="section-title">SKILLS</h2>
+        </div>
+        <!-- /.section-heading -->
+        <div class="container">
+            <div class="skills-container">
+                <div class="col-md-4" data-scroll-reveal="enter from the left after .5s">
+                    <div class="section-box">
+                        <h2 class="box-title">Programming languages</h2>
+                        <ul>
+                            <li>C#. NET</li>
+                            <li>JavaScript</li>
+                            <li>HTML, CSS</li>
+                            <li>Java</li>
+                        </ul>
+                        <h2 class="box-title">Frameworks & platforms</h2>
+                        <ul>
+                            <li>ReactJS / AngularJS / NodeJS</li>
+                            <li>jQuery / Twitter Bootstrap / Materialize CSS</li>
+                            <li>ASP.NET MVC / Entity Framework / LINQ to SQL</li>
+                            <li>ASP WebAPI / RestfulAPI / JSON, XML</li>
+                            <li>Javascript SDK: FacebookSDK, Firebase, MongoLab API</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4" data-scroll-reveal="enter from the right after .5s">
+                    <div class="section-box">
+                        <h2 class="box-title">Database</h2>
+                        <ul>
+                            <li>Microsoft SQL</li>
+                            <li>MySQL</li>
+                            <li>MongoDB</li>
+                            <li>Firebase Google</li>
+                        </ul>
+                        <h2 class="box-title">Version Control</h2>
+                        <ul>
+                          <li>Git (Github)</li>
+                        </ul>
+                        <h2 class="box-title">IDE</h2>
+                        <ul>
+                            <li>Visual Studio Code</li>
+                            <li>Visual Studio 2017</li>
+                            <li>Netbeans</li>
+                            <li>Sublime Text 3</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4" data-scroll-reveal="enter from the right after .5s">
+                    <div class="section-box">
+                        <h2 class="box-title">Foreign Language</h2>
+                        <ul>
+                            <li>TOEIC: ---/990</li>
+                            <li>IELTS: ---/100</li>
+                        </ul>
+                        <h2 class="box-title">Knowledge</h2>
+                        <ul>
+                            <li>Deep understanding about OOP, Design Pattern ...</li>
+                            <li>Good understanding about the Agile and Scrum process</li>
+                            <li>Good understanding software design, database design, RestfulAPI, ...</li>
+                            <li>Good time management, presentation and teamwork skills ...</li>
+                            <li>SEO</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.skills-container -->
+            </div>
+    </section>
+    <!-- /#skills -->
+    <section id="experiences" class="default-section" data-scroll-reveal="enter from the bottom over .5s">
+        <div class="section-heading">
+            <h2 class="section-title">Experiences</h2>
+        </div>
+        <!-- /.section-heading -->
+        <div class="container">
+            <div class="experiences-container">
+                <div class="experience-items">
+                    <div class="experience-item" data-scroll-reveal="enter from the bottom over .5s">
+                        <div class="name-designation" data-scroll-reveal="enter from the left after .5s">
+                            <h3 class="designation">Junior Developer</h3>
+                            <p class="name-of-org">Aptech Da Nang</p>
                         </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-05" title="">
-                        <img alt="" src="images/portfolio/farmerboy.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Farmer Boy</h5>
-                              <p>Branding</p>
-          					   </div>
+                        <!-- /.name-designation -->
+                        <div class="stay-time light-yellow">
+                            <p>
+                                8/2016
+                                <br /> -
+                                <br />
+                                8/2018
+                            </p>
                         </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-06" title="">
-                        <img alt="" src="images/portfolio/girl.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Girl</h5>
-                              <p>Photography</p>
-          					   </div>
+                        <!-- /.stay-time -->
+                        <div class="comments" data-scroll-reveal="enter from the right after .5s">
+                            <ul>
+                                <li><span class="bold">SEM 1</span>: Salon T&L
+                                    <ul>
+                                        <li><span class="bold">Project Description</span>: A website that sells hairdressing products and web calendar features without having to go to the store.</li>
+                                        <li><span class="bold">Team Size</span>: 2</li>
+                                        <li><span class="bold">Responsiblities</span>: Meeting with customers and teammates to get clear requirement. Develop the frameworks and modules of the system.</li>
+                                        <li><span class="bold">Accomplishments</span>: Design, Learned new Microsoft technologies and frameworks. Improved teamwork and communication skills.</li>
+                                        <li><span class="bold">Technologies</span>: HTML5, CSS3, Bootstrap, jQuery, Javascript ...</li>
+                                    </ul>
+                                </li>
+                                <li><span class="bold">SEM 2</span>: Coffee Vine HTT
+                                    <ul>
+                                        <li><span class="bold">Project Description</span>: Is one of the cafe management software, it can help users to easily calculate and manage currency .</li>
+                                        <li><span class="bold">Team Size</span>: 3</li>
+                                        <li><span class="bold">Responsiblities</span>: Design, Meeting with customers and teammates to get clear requirement. Develop the frameworks and modules of the system.</li>
+                                        <li><span class="bold">Accomplishments</span>: Learned new Microsoft technologies and frameworks. Improved teamwork and communication skills.</li>
+                                        <li><span class="bold">Technologies</span>: JavaFX, CSS3, Microsoft SQL Server 2014, RMI, ...</li>
+                                    </ul>
+                                </li>
+                                <li><span class="bold">SEM 3</span>: Book Vine HTT
+                                    <ul>
+                                        <li><span class="bold">Project Description</span>: A website selling books online .</li>
+                                        <li><span class="bold">Team Size</span>: 3</li>
+                                        <li><span class="bold">Responsiblities</span>: Design, Meeting with customers and teammates to get clear requirement. Develop the frameworks and modules of the system.</li>
+                                        <li><span class="bold">Accomplishments</span>: Learned new Microsoft technologies and frameworks. Improved teamwork and communication skills.</li>
+                                        <li><span class="bold">Technologies</span>: C#, ASP.NET MVC5, Entity Framework, Microsoft SQL Server 2014, ...</li>
+                                    </ul>
+                                </li>
+                                <li><span class="bold">SEM 4</span>: --- 
+                                    <ul>
+                                        <li><span class="bold">Project Description</span>: ------------------------ .</li>
+                                        <li><span class="bold">Team Size</span>: ---------------------------------- .</li>
+                                        <li><span class="bold">Responsiblities</span>: ---------------------------- .</li>
+                                        <li><span class="bold">Accomplishments</span>: ---------------------------- .</li>
+                                        <li><span class="bold">Technologies</span>: ------------------------------- .</li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-07" title="">
-                        <img alt="" src="images/portfolio/origami.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Origami</h5>
-                              <p>Illustrration</p>
-          					   </div>
+                        <!-- /.comments -->
+                    </div>
+                    <!-- /.experience-item -->
+                    <div class="experience-item" data-scroll-reveal="enter from the bottom over .5s">
+                        <div class="name-designation" data-scroll-reveal="enter from the left after .5s">
+                            <h3 class="designation">Projects</h3>
+                            <p class="name-of-org"></p>
                         </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div> <!-- item end -->
-
-               <div class="columns portfolio-item">
-                  <div class="item-wrap">
-
-                     <a href="#modal-08" title="">
-                        <img alt="" src="images/portfolio/retrocam.jpg">
-                        <div class="overlay">
-                           <div class="portfolio-item-meta">
-          					      <h5>Retrocam</h5>
-                              <p>Web Development</p>
-          					   </div>
+                        <!-- /.name-designation -->
+                        <div class="stay-time light-violet">
+                            <p>
+                                <br/> All the time
+                            </p>
                         </div>
-                        <div class="link-icon"><i class="icon-plus"></i></div>
-                     </a>
-
-                  </div>
-          		</div>  <!-- item end -->
-
-            </div> <!-- portfolio-wrapper end -->
-
-         </div> <!-- twelve columns end -->
-
-
-         <!-- Modal Popup
-	      --------------------------------------------------------------- -->
-
-         <div id="modal-01" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-coffee.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Coffee Cup</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://srikrishnacommunication.com/Giridesigns.html" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
+                        <!-- /.stay-time -->
+                        <div class="comments" data-scroll-reveal="enter from the right after .5s">
+                            <p>In my free time, I work on some pet projects: <a href="https://github.com/tannguyen208/">https://github.com/tannguyen208/</a></p>
+                            <ul>
+                                <li><a href="http://jav-idol.toidicodedao.com/" class="bold">JAVA Software Coffee</a>: is one of the cafe management software, it can help users to easily calculate and manage currency <b>(JavaFX. Back-end: JAVA + SQL SERVER 2014 )</b>
+                                    - <a href="https://github.com/tannguyen208/project-sw-javafx-coffee" target="_blank">Github</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.comments -->
+                    </div>
+                    <!-- /.experience-item -->
+                </div>
+                <!-- /.experience-items -->
             </div>
-
-	      </div><!-- modal-01 End -->
-
-         <div id="modal-02" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-console.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Console</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Web Development</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://srikrishnacommunication.com/Giridesigns.html" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
+            <!-- /.experiences-container -->
+        </div>
+    </section>
+    <!-- /#experiences -->
+    <section id="education" class="default-section" data-scroll-reveal="enter from the bottom over .5s">
+        <div class="section-heading">
+            <h2 class="section-title">Education</h2>
+        </div>
+        <!-- /.section-heading -->
+        <div class="container">
+            <div class="education-container">
+                <div class="education-items">
+                    <div class="col-md-12" data-scroll-reveal="enter from the top after .5s">
+                        <div class="education-item">
+                            <div class="edu-time light-blue">
+                                <p>2016
+                                    <br /> -
+                                    <br /> 2018</p>
+                            </div>
+                            <!-- /.edu-time -->
+                            <div class="edu-title">
+                                <p class="edu-session">International degree</p>
+                                <p class="edu-inst">Softech Aptech, Da Nang City, Vietnam</p>
+                            </div>
+                            <!-- /.edu-title -->
+                            <div class="edu-comments">
+                                <ul>
+                                    <li>GPA: ---/10. Degree grade: ---</li>
+                                    <li>Team leader in the Capstone Project. Highest Capstone Project score in that semester.</li>
+                                    <li>One of the best student in courses: Designer, Advanced Database.</li>
+                                </ul>
+                            </div>
+                            <!-- /.edu-comments -->
+                        </div>
+                        <!-- /.education-item -->
+                    </div>
+                </div>
+                <!-- /.education-items -->
             </div>
-
-	      </div><!-- modal-02 End -->
-
-         <div id="modal-03" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-judah.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Judah</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://srikrishnacommunication.com/Giridesigns.html" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-03 End -->
-
-         <div id="modal-04" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-intothelight.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Into the Light</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://srikrishnacommunication.com/Giridesigns.html" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-04 End -->
-
-         <div id="modal-05" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-farmerboy.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Farmer Boy</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://srikrishnacommunication.com/Giridesigns.html" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-05 End -->
-
-         <div id="modal-06" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-girl.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Girl</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Photography</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://srikrishnacommunication.com/Giridesigns.html" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-06 End -->
-
-         <div id="modal-07" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-origami.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Origami</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Branding, Illustration</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://srikrishnacommunication.com/Giridesigns.html" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-07 End -->
-
-         <div id="modal-08" class="popup-modal mfp-hide">
-
-		      <img class="scale-with-grid" src="images/portfolio/modals/m-retrocam.jpg" alt="" />
-
-		      <div class="description-box">
-			      <h4>Retrocam</h4>
-			      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-               <span class="categories"><i class="fa fa-tag"></i>Webdesign, Photography</span>
-		      </div>
-
-            <div class="link-box">
-               <a href="http://srikrishnacommunication.com/Giridesigns.html" target="_blank">Details</a>
-		         <a class="popup-modal-dismiss">Close</a>
-            </div>
-
-	      </div><!-- modal-01 End -->
-
-
-      </div> <!-- row End -->
-
-   </section> <!-- Portfolio Section End-->
-
-
-   <!-- Call-To-Action Section
-   ================================================== -->
-   <section id="call-to-action">
-
-      <div class="row">
-
-         <div class="two columns header-col">
-
-            <h1><span>Get Hosting.</span></h1>
-
-         </div>
-
-         <div class="seven columns">
-
-            <h2><span class="lead">Unde Omnis Iste</span></h2>
-            <p><span class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae. </span></p>
-
-         </div>
-
-         <div class="three columns action">
-
-
-
-         </div>
-
-      </div>
-
-   </section> <!-- Call-To-Action Section End-->
-
-
-   <!-- Testimonials Section
-   ================================================== -->
-   <section id="testimonials">
-
-      <div class="text-container">
-
-         <div class="row">
-
-            <div class="two columns header-col">
-
-               <h1><span>Client Testimonials</span></h1>
-
-            </div>
-
-            <div class="ten columns flex-container">
-
-               <div class="flexslider">
-
-                  <ul class="slides">
-
-                     <li>
-                        <blockquote>
-                           <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
-                           to do what you believe is great work. And the only way to do great work is to love what you do.
-                           If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know.
-                           </p>
-                           <cite>Steve Jobs</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
-
-                     <li>
-                        <blockquote>
-                           <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                           Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                           nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-                           </p>
-                           <cite>Mr. Adobe</cite>
-                        </blockquote>
-                     </li> <!-- slide ends -->
-
-                  </ul>
-
-               </div> <!-- div.flexslider ends -->
-
-            </div> <!-- div.flex-container ends -->
-
-         </div> <!-- row ends -->
-
-       </div>  <!-- text-container ends -->
-
-   </section> <!-- Testimonials Section End-->
-
-
-   <!-- Contact Section
-   ================================================== -->
-   <section id="contact">
-
-         <div class="row section-head">
-
-            <div class="two columns header-col">
-
-               <h1><span>Get In Touch.</span></h1>
-
-            </div>
-
-            <div class="ten columns">
-
-                  <p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-                  </p>
-
-            </div>
-
-         </div>
-
-         <div class="row">
-
-            <div class="eight columns">
-
-               <!-- form -->
-               <form action="" method="post" id="contactForm" name="contactForm">
-					<fieldset>
-
-                  <div>
-						   <label for="contactName">Name <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactName" name="contactName">
-                  </div>
-
-                  <div>
-						   <label for="contactEmail">Email <span class="required">*</span></label>
-						   <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
-                  </div>
-
-                  <div>
-						   <label for="contactSubject">Subject</label>
-						   <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
-                  </div>
-
-                  <div>
-                     <label for="contactMessage">Message <span class="required">*</span></label>
-                     <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
-                  </div>
-
-                  <div>
-                     <button class="submit">Submit</button>
-                     <span id="image-loader">
-                        <img alt="" src="images/loader.gif">
-                     </span>
-                  </div>
-
-					</fieldset>
-				   </form> <!-- Form End -->
-
-               <!-- contact-warning -->
-               <div id="message-warning"> Error boy</div>
-               <!-- contact-success -->
-				   <div id="message-success">
-                  <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-				   </div>
-
-            </div>
-
-
-            <aside class="four columns footer-widgets">
-
-               <div class="widget widget_contact">
-
-					   <h4>Address and Phone</h4>
-					   <p class="address">
-						   Giri Designs<br>
-						   50, Thiruvoodal Street, <br>
-						   Thiruvannamalai - 606 601, TN.<br>
-						   <span>+91 94884 87853</span>
-					   </p>
-
-				   </div>
-
-               <div class="widget widget_tweets">
-
-                  <h4 class="widget-title">Latest Tweets</h4>
-
-                  <ul id="twitter">
-                     <li>
-                        <span>
-                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
-                        </span>
-                        <b><a href="#">2 Days Ago</a></b>
-                     </li>
-                     <li>
-                        <span>
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                        eaque ipsa quae ab illo inventore veritatis et quasi
-                        </span>
-                        <b><a href="#">3 Days Ago</a></b>
-                     </li>
-                  </ul>
-
-		         </div>
-
-            </aside>
-
-      </div>
-
-   </section> <!-- Contact Section End-->
-
-
-   <!-- footer
-   ================================================== -->
-   <footer>
-
-      <div class="row">
-
-         <div class="twelve columns">
-
-            <ul class="social-links">
-               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-               <li><a href="#"><i class="fa fa-skype"></i></a></li>
-            </ul>
-
-            <ul class="copyright">
-               <li>Ceevee &copy; Copyright 2016</li>
-               <li>Design by <a href="http://srikrishnacommunication.com/Giridesigns.html" title="Styleshout" target="_blank">Giri Designs</a></li>   
-            </ul>
-
-         </div>
-
-         <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
-
-      </div>
-
-   </footer> <!-- Footer End-->
-
-   <!-- Java Script
-   ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
-
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
-
+            <!-- /.education-container -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <script defer="defer" async="async" src="dist/dist.js"></script>
 </body>
+
 
 </html>
